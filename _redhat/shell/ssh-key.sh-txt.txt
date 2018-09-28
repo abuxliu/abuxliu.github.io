@@ -1,0 +1,40 @@
+mkdir /root/.ssh/
+touch /root/.ssh/authorized_keys
+cat > /root/.ssh/authorized_keys << EOF
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbGLCU9DFw1QkThZEG6/OEDpXkhAPG05wPxNc/8ZdB5LK799uN2rrttT8xnAAGIRWEKaIf6o6ZQy8ThrcMlMatkP8VNNE39v8doWSg4S/kiAihTNVJAbw1Jo0ui5uEvM+1sho8Tr1qfm4M2zcRS1bRXBrtTvhgDhybsXpEqFkCp5OHh9ZkvdSffQeIf2cZakpsMkWrI9JkuYpxoYvqdyZqNaL+pfFxUx6LHOXA6LEom1eLRo3axcOdgdfEfpdLBOVRf/FnyzqQSZg5InxXJXHsej0mJzzKSb4+i9+9qbC3QDHel/866wH2jD2HLIE+XEBn5a6lWzI1v6cfQS6ION7x rsync@saas.local
+EOF
+#
+touch /root/.ssh/id_rsa
+cat > /root/.ssh/id_rsa << EOF
+-----BEGIN RSA PRIVATE KEY-----
+MIIEoQIBAAKCAQEA2xiwlPQxcNUJE4WRBuvzhA6V5IQDxtOcD8TXP/GXQeSyu/fb
+jdq67bU/MZwABiEVhCmiH+qOmUMvE4a3DJTGrZD/FTTRN/b/HaFkoOEv5IgIoUzV
+SQG8NSaNLoubhLzPtbIaPE69an5uDNs3EUtW0Vwa7U74YA4cm7F6RKhZAqeTh4fW
+ZL3Un30HiH9nGWpKbDJFqyPSZLmKcaGL6ncmajWi/qXxcVMeixzlwOixKJtXi0aN
+2sXDnYHXxH6XSwTlUX/xZ8s6kEmYOSJ8VyVx7Ho9Jic8ykm+Povfvamwt0Ax3pf/
+OusB9ow9hyyBPlxAZ+WupVsyNb+nH0EuiDje8QIDAQABAoH/L+02s163cfcoBR0y
+nFEA8+I857/5E4U2njxw2Yv/imp8rqGJZX5zZYxARpnZZ33VNxPkYxbsGpqXsa3G
+XPoue8k8A2eKXLOrGtAzMv4Pe+5F9QLZpR68DORh/cyMOH0U8qoDEy4mQSVm7WkG
+osHYO/Pp7/9WVazAlU49cMdisTGPYYCI5BZL4YrXXFBTsrJvEw76ej/b3urIa4Rg
+DuJrprCA3XNWpFMJ879lV/47TsgCitInSV5E/lN6LvEn8EXZg47XYoEx9g6YOpns
++Lr+5yljah2yl3NoTlMlq/V4FgexmXjK7fbr+zG6kv6DV1CUSVxxiCTI3eTp/imN
+ENnhAoGBAPaTXY9onKmt69v2ufX5h3FOpaNtGpvChloQMV5KW2p8dXIoXAp9vcS2
+4uan5pE3hZXXScNXbHvXJT41UBuejInhE7qjDASSxUQf/bamUFWyNcMJP13lg8he
+L4/2yH/QTU0k9QRKJQiVH4b3turGzLVZDDNXmkESDJ/hfDEn7fPfAoGBAON4c85U
+tysW4CdxEANbNIff3q2BkNGDOVf7ftQjfh4NP3wENq+r+2G1M9WJhBDaKyld51Mq
+G09Do5c6+qVcy5xp/OAsTthuplvvGuw2+dTCsNwM4slfhfb9A2IUG/nW8+ZrKlSI
+vYLFdy553lTvNHqYQ9vLEcfy4b6da6V54gcvAoGANdE0Oni6uM4dDIVtUSKFTVW9
+EU5e4GA0srOWEt5n1XYUrDXi4OdQ4/6Gx5Ed4dQcc/fpQZlzNBRhLJK2SVDxm6Zk
+h/fOR7FBHP1egt8J6apb0ZXTHstZWAI2n1VdrYfpV00ZrTYBnz3tA6hNZDC/vVUS
+NKKKKGmoF70/PftZFEECgYBmKH2SB9fvgSmQbSWs7DQuZauDLvJUNeP2EJwIOBx2
+8Ko3T0kkIlAWtKOf3k+ypdjGjkbKwdlcAtugmrtgssk66RrJrvyGFUOffEYSGiqf
+lASL/zmHCOCIaV8wmClsTk5hiHWNW5AJABgjhlYEvR1LhcDMIGpO61TZH6ftvEx3
+vwKBgQCsdLXy3rf207tIrd/1jhmqMXrCymkZnrbfehvU25KL8tzhQokb/vkkIwdH
+umpyXFhLoos4RcZLeBhHyswjjs8p2bZpTM+OQWFL/ARiwahfT/MIq9Ytnm46Ji6p
+GQz9jvoI0jhSCEjvV5Xybf42O9I0kSel2BwdU+tqPCvTdScrwQ==
+-----END RSA PRIVATE KEY-----
+EOF
+chmod 600 /root/.ssh/authorized_keys
+chmod 600 /root/.ssh/id_rsa
+#取消known_hosts确认
+rm -rf /root/ls.sh

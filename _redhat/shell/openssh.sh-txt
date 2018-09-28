@@ -1,0 +1,6 @@
+#!/bin/bash
+#当ssh无法访问时执行以下命令恢复ssh到初始化状态
+yum remove openssh* -y
+rm -rf /etc/ssh/sshd_config.rpmsave
+yum install openssh-server -y
+/etc/init.d/sshd start
