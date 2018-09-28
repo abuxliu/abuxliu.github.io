@@ -1,6 +1,6 @@
 # Abu Blog
 
-### [View Live Abu Blog &rarr;](https://abuniu.github.io)
+### [View Live Abu Blog &rarr;](https://abuxliu.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
