@@ -5,6 +5,10 @@ subtitle:   ""
 date:       2017-06-24 12:00:00
 author:     "Hux 转载"
 header-img: ""
+catalog: true
+tags:
+    - 梦想
+    - 生活
 ---
 
 > 在知乎被删帖，我理解知乎。  

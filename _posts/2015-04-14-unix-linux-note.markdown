@@ -7,7 +7,6 @@ author:     "Hux"
 header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
-    - OS
     - Unix
     - Linux
 ---
