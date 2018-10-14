@@ -1,6 +1,6 @@
 # Abu blog 模板
 
-### [我的博客在这里 &rarr;](http://abuniu.github.io)
+### [我的博客在这里 &rarr;](http://abuxliu.github.io)
 
 
 ### 关于收到"Page Build Warning"的email
@@ -84,8 +84,8 @@ SEOTitle: Abu Blog			# 在后面会详细谈到
 description: "Cool Blog"    # 随便说点，描述一下
 
 # SNS settings      
-github_username: abuniu     # 你的github账号
-# weibo_username: abuniu     # 你的微博账号，底部链接会自动更新的。
+github_username: abuxliu    # 你的github账号
+# weibo_username: abuxliu     # 你的微博账号，底部链接会自动更新的。
 
 # Build settings
 # paginate: 10              # 一页你准备放几篇文章
