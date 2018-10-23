@@ -4,7 +4,10 @@ title:      "SQL Server 2017 on Linux"
 subtitle:   ""
 date:       2018-10-18 13:00:00
 author:     "ABU"
-header-img: ""
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - 杭州商学院
 ---
 
 #SQL Server 2017 on Linux
