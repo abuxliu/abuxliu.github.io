@@ -1,1 +1,0 @@
-yum  install lrzsz  epel-release nginx php php-fpm php-bcmatch php-gd php-mbstring php-mcrypt php-mysql php-pecl-mongo php php-fpm php-bcmatch php-gd php-mbstring  php-xmlrpc php-dom  php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc php-gd php-mysql php-pdo php-soap php-mbstring  php-bcmath  -y
