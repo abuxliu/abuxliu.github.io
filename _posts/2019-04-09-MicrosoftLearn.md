@@ -31,14 +31,14 @@ apt-get install blobfuse
 
 ```
 mkdir /mnt/blobfusetmp
-touch /root/.fuse_connection.cfg
-chmod 600 /root/.fuse_connection.cfg
+touch /etc/fuse_connection.cfg
+chmod 600 /etc/fuse_connection.cfg
 cat > /root/.fuse_connection.cfg << EOF
 accountName myaccount
 accountKey storageaccesskey
 containerName mycontainer
 EOF
-mkdir /opt/opt/jenkins/workspace
+mkdir /opt/videofile
 ```
 
 #### 4. 装载Blob容器
@@ -47,6 +47,7 @@ mkdir /opt/opt/jenkins/workspace
 ```
 blobfuse /opt/opt/jenkins/workspace --tmp-path=/mnt/blobfusetmp  --config-file=/root/.fuse_connection.cfg -o attr_timeout=240 -o entry_timeout=240 -o negative_timeout=120 -o allow_other
 ```
+
 
 
 
