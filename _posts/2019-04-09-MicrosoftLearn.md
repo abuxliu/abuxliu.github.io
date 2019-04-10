@@ -21,7 +21,7 @@ lsb_release -a
 ```
 #### 2. 安装驱动程序
 ```
-wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 apt-get update
 apt-get install blobfuse
@@ -36,12 +36,13 @@ apt-get install blobfuse
 sudo mkdir /mnt/blobfusetmp
 sudo chown <youruser> /mnt/blobfusetmp
 touch /etc/fuse_connection.cfg
-chmod 600 /etc/fuse_connection.cfg
 cat > /root/.fuse_connection.cfg << EOF
-accountName myaccount
-accountKey storageaccesskey
-containerName mycontainer
+accountName ilsvideo
+accountKey L==
+containerName videofile
+blobEndpoint lsvideo.blob.core.chinacloudapi.cn
 EOF
+chmod 700 /etc/fuse_connection.cfg
 mkdir /opt/videofile
 ```
 
@@ -49,7 +50,7 @@ mkdir /opt/videofile
 >  装载该目录的用户是可以访问它的唯一人员，默认情况下，这可以保护访问权限。 若要允许所有用户进行访问，可以通过选项 -o allow_other 进行装载。
 
 ```
-blobfuse /opt/videofile --tmp-path=/mnt/blobfusetmp  --config-file=/root/.fuse_connection.cfg -o attr_timeout=240 -o entry_timeout=240 -o negative_timeout=120 -o allow_other
+blobfuse /opt/videofile --tmp-path=/mnt/blobfusetmp  --config-file=/etc/fuse_connection.cfg --use-https=true --file-cache-timeout-in-seconds=0 -o allow_other
 ```
 
 
