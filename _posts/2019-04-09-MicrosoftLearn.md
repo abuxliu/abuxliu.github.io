@@ -43,20 +43,13 @@ containerName videofile
 blobEndpoint ilsvideo.blob.core.chinacloudapi.cn
 EOF
 chmod 700 /etc/fuse_connection.cfg
-mkdir /opt/videofile
+mkdir /data
 ```
 
 #### 4. 装载Blob容器
 >  装载该目录的用户是可以访问它的唯一人员，默认情况下，这可以保护访问权限。 若要允许所有用户进行访问，可以通过选项 -o allow_other 进行装载。
 
 ```
-blobfuse /opt/data-blob --tmp-path=/mnt/blobfusetmp  --config-file=/etc/fuse_connection.cfg --use-https=true --file-cache-timeout-in-seconds=0 -o allow_other
+blobfuse /data --tmp-path=/mnt/blobfusetmp  --config-file=/etc/fuse_connection.cfg --use-https=true --file-cache-timeout-in-seconds=0 -o allow_other
 ```
-
-
-
-
-
-
-
 
