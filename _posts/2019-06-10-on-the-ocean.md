@@ -40,7 +40,7 @@ administrator admin root DevOps00
 |Nginx|LDAP|采用nginx-ldap模块完成|
 |Go|LDAP|运维平台使用go语言开发，前端集成ldap|
 
-1）Filebeat+kafka+ELK+nginx+ldap，这套日志系统的部署应该及时完成
+1）Filebeat+kafka+ELK+nginx+ldap
 
 2）AKS部署一套代码
 
